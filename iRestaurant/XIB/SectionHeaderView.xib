@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="center" id="QMW-oB-doA" customClass="SectionHeaderView" customModule="iRestaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHi-Zg-vc0">
+                    <rect key="frame" x="5" y="5" width="316" height="30"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                    <color key="textColor" red="0.95085555320000004" green="0.30528396369999999" blue="0.30708599089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQX-HO-kSn">
+                    <rect key="frame" x="326" y="5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="1QV-Qc-v1y"/>
+                        <constraint firstAttribute="height" constant="20" id="y3i-S7-ceQ"/>
+                    </constraints>
+                    <color key="tintColor" red="0.95085555320000004" green="0.30528396369999999" blue="0.30708599089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="arrow_down"/>
+                    <state key="selected" image="arrow_up">
+                        <color key="titleColor" red="0.95085555320000004" green="0.30528396369999999" blue="0.30708599089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleOpen" destination="QMW-oB-doA" eventType="touchUpInside" id="fdW-7O-hXb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" name="Dark"/>
+            <constraints>
+                <constraint firstItem="dQX-HO-kSn" firstAttribute="top" secondItem="0IM-w6-nl3" secondAttribute="top" constant="5" id="0QK-Im-w6G"/>
+                <constraint firstItem="dHi-Zg-vc0" firstAttribute="leading" secondItem="0IM-w6-nl3" secondAttribute="leading" constant="5" id="3Ts-ng-Mua"/>
+                <constraint firstItem="dHi-Zg-vc0" firstAttribute="top" secondItem="0IM-w6-nl3" secondAttribute="top" constant="5" id="9J7-ed-DQ4"/>
+                <constraint firstItem="0IM-w6-nl3" firstAttribute="trailing" secondItem="dQX-HO-kSn" secondAttribute="trailing" constant="5" id="OcY-ya-Urr"/>
+                <constraint firstItem="0IM-w6-nl3" firstAttribute="bottom" secondItem="dHi-Zg-vc0" secondAttribute="bottom" constant="5" id="ZJe-a3-pg2"/>
+                <constraint firstItem="dQX-HO-kSn" firstAttribute="leading" secondItem="dHi-Zg-vc0" secondAttribute="trailing" constant="5" id="tDA-fK-Aj9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="0IM-w6-nl3"/>
+            <connections>
+                <outlet property="disclosureButton" destination="dQX-HO-kSn" id="cvC-2Z-vDB"/>
+                <outlet property="titleLabel" destination="dHi-Zg-vc0" id="Yh4-tk-FCN"/>
+            </connections>
+            <point key="canvasLocation" x="-486" y="-476"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_down" width="50" height="50"/>
+        <image name="arrow_up" width="50" height="50"/>
+        <namedColor name="Dark">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
