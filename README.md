@@ -1,5 +1,5 @@
 # iRestaurant
-IOS App
+IOS App Based on Yelp API For Restaurants
   
 
 <img src="Screenshots/01%20-%20Login.png" width="300">    <img src="Screenshots/02%20-%20SignUp.png" width="300">
