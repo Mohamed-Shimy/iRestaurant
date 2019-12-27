@@ -8,5 +8,5 @@ IOS App Based on Yelp API For Restaurants
 <img src="Screenshots/07%20-%20Home%20Tab%20Swap%20Action.png" width="300">   <img src="Screenshots/08%20-%20Favorites%20Tab.png" width="300">
 <img src="Screenshots/09%20-%20Favorites%20Tab%202.png" width="300">    <img src="Screenshots/10%20-%20Details%20Page.png" width="300">
 <img src="Screenshots/11%20-%20Map%20Page.png" width="300">   <img src="Screenshots/12%20-%20Add%20New%20Restaurant%20Page.png" width="300">
-
 <img src="Screenshots/13%20-%20Update%20Restaurant%20Page.png" width="300">
+<img src="Screenshots/14%20-%20Discover.png" width="300">       <img src="Screenshots/15%20-%20Discover_2.png" width="300">
